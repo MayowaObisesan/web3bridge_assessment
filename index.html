@@ -98,13 +98,13 @@
         </div>
         <div class="todo-info">
             Your Todo List
-            <span id="id-todo-count">0</span>
+            <span id="id-todo-count">1</span>
         </div>
         <ul id="id-todo-list" class="todo-list">
             <li>
                 <input type="checkbox" onclick="markAsComplete(event)">
-                <span>Apple</span>
-                <button class="hide-todo-delete" onclick="deleteCompletedTasks(event)">Delete</button>
+                <span class="todo-completed">Take Web3Bridge Assessment</span>
+                <button class="" onclick="deleteCompletedTasks(event)">Delete</button>
             </li>
         </ul>
     </section>
@@ -124,7 +124,7 @@
         }
 
         function deleteCompletedTasks(event) {
-            // This function deleted completed tasks. i.e., removes the from the unordered lists.
+            // This function deleted completed tasks. i.e., removes them from the unordered lists.
             event.target.parentElement.remove();
             if (Number(todoCountElement.innerHTML) > 0) {
                 todoCountElement.innerHTML = Number(todoCountElement.innerHTML) - 1;
@@ -137,7 +137,6 @@
                 alert("Kindly type a task to add")
                 return null;
             }
-            const thisElem = event.target;
             const todoListItem = `<li>
                 <input type="checkbox" onclick="markAsComplete(event);">
                 <span>${todoInput.value}</span>
