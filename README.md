@@ -1,7 +1,9 @@
 ### WEB3BRIDGE TODO ASSESSMENT REPO
 
 The HTML, JavaScript and CSS are contained within the index.html file.
-The implementation is documented as needed within the code itself.
+The implementation is documented as needed within the code.
+
+Added an extra count operation to the number of todoItems.
 
 Deployed using Vercel.
 
